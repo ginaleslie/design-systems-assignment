@@ -1,0 +1,20 @@
+{
+  "name": "design-systems-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ginaleslie/design-systems-assignment.git",
+  "author": "Gina, Lulama, Ruvimbo",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.7.0",
+    "grunt": "^1.3.0",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-eslint": "^23.0.0",
+    "handlebars": "^4.7.6",
+    "jquery": "^3.5.1",
+    "less": "^3.12.2",
+    "less-watch-compiler": "^1.14.6",
+    "load-grunt-tasks": "^5.1.0"
+  }
+}
