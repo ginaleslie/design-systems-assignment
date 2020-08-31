@@ -1,13 +1,10 @@
 $(function () {
 	var navInfo = $("#nav-template").html();
+	var footerInfo = $("#footer-template").html();
 
 	var template = Handlebars.compile(navInfo);
+	var footerTemplate = Handlebars.compile(footerInfo);
 
-	// 4b. You can create your own helper functions
-	// This returns a link when text and url are passed in
-	// escapeExpression() escapes the passed string so it is
-	// safe to use in content. Helpers should use this method
-	// when returning content to avoid code injection
 	Handlebars.registerHelper("makeLink", function (text, url, options) {
 		text = Handlebars.Utils.escapeExpression(text);
 		url = Handlebars.Utils.escapeExpression(url);
@@ -48,20 +45,46 @@ $(function () {
 	// });
 
 	// 2b. Passing the array data
-	var navItems = template(
+	var footerItems = footerTemplate(
 		{
-			name: "Yogi Berra",
-			quotes: [
+			description:
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+			linksOne: [
 				{
-					quote:
-						"If you don't know where you are going, you might wind up someplace else.",
+					link: "What's new",
 				},
 				{
-					quote:
-						"You better cut the pizza in four pieces because I'm not hungry enough to eat six.",
+					link: "Dolor",
 				},
-				{ quote: "I never said most of the things I said." },
-				{ quote: "Nobody goes there anymore because it's too crowded." },
+				{ link: "Ipsum" },
+			],
+			linksTwo: [
+				{
+					link: "Billing information",
+				},
+				{
+					link: "Dolor",
+				},
+				{ link: "Ipsum" },
+				{ link: "Desuid nor" },
+			],
+			linksThree: [
+				{
+					link: "Become a teacher",
+				},
+				{
+					link: "Dolor",
+				},
+				{ link: "Ipsum" },
+				{ link: "Nostrud" },
+			],
+			linksFour: [
+				{
+					link: "Become partners",
+				},
+				{
+					link: "Ipsum",
+				},
 			],
 			// 3b. Passing tags to the triple stash
 			yogiBio:
@@ -70,5 +93,27 @@ $(function () {
 		// 6c. Say hello in passed language
 	);
 
+	var navItems = template({
+		name: "Yogi Berra",
+	});
+
+	$("#footerData").append(footerItems);
+
 	$("#navData").append(navItems);
+
+	$(".cross").hide();
+	$(".menu").hide();
+	$(".hamburger").click(function () {
+		$(".menu").slideToggle("slow", function () {
+			$(".hamburger").hide();
+			$(".cross").show();
+		});
+	});
+
+	$(".cross").click(function () {
+		$(".menu").slideToggle("slow", function () {
+			$(".cross").hide();
+			$(".hamburger").show();
+		});
+	});
 });
