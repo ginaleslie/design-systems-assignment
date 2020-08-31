@@ -1,3 +1,193 @@
-p {
+@font-face {
+  font-family: "courgette-regular";
+  src: url("../fonts/courgette-regular-webfont.woff2") format("woff2"), url("../fonts/courgette-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoslab-regular";
+  src: url("../fonts/robotoslab-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/robotoslab-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoslab-bold";
+  src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "opensans-bold";
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "opensans-regular";
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "opensans-semibold";
+  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "robotoslab-bold";
+  font-size: 37px;
+  letter-spacing: 0.6px;
+}
+h2 {
+  font-family: "robotoslab-bold";
+  font-size: 30px;
+  letter-spacing: 0.6px;
+}
+h3 {
+  font-family: "opensans-semibold";
+  font-size: 27px;
+  letter-spacing: 0.2px;
+}
+h4 {
+  font-family: "robotoslab-regular";
+  font-size: 25px;
+  letter-spacing: 0.2px;
+}
+h5 {
+  font-family: "opensans-semibold";
+  font-size: 23px;
+  letter-spacing: 0.2px;
+}
+h6 {
+  font-family: "opensans-bold";
+  font-size: 17px;
+  letter-spacing: 0.2px;
+}
+p,
+.p,
+body {
   font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  font-family: "opensans-regular";
+}
+.logo {
+  font-family: "courgette-regular";
+  font-size: 23px;
+}
+.logo-serif {
+  font-size: 19px;
+  font-family: "opensans-regular";
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.grey-two {
+  color: #585858;
+}
+.white {
+  color: #ffffff;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+.no-bg-btn {
+  background-color: transparent;
+}
+.btn-primary {
+  background-color: #00ffcb;
+  color: #08090a;
+  padding: 5px 15px;
+}
+nav {
+  background-color: #08090a;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 10px 15px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.pr {
+  padding-right: 30px;
+}
+.rect {
+  background-color: #00ffcb;
+  height: 13px;
+  position: absolute;
+  top: 54px;
+  width: 140px;
 }

@@ -4,3 +4,4 @@
 # ignore everything in Scripts except files beginning with "script"
 **/Scripts
 !**/Scripts/scripts*
+!**/Scripts/navigation*

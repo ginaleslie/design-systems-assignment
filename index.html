@@ -1,9 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title></title>
+		<link rel="stylesheet" href="./css/dist/main.css" />
+
+		<title>Fela Education</title>
 	</head>
-	<body></body>
+	<body>
+		<nav id="navData" class="white"></nav>
+
+		<script id="nav-template" type="text/x-handlebars-template">
+			<div class="logo white">
+				{{makeLink "fela." "./index.html" link="logo"}}
+			</div>
+			<ul class="nav-links">
+				<li class="pr">
+					{{makeLink "Courses" "./index.html"}}
+				</li>
+				<li class="pr">
+					{{makeLink "Pricing" "#"}}
+				</li>
+				<li>
+					{{makeLink "Teaching" "./index.html"}}
+				</li>
+			</ul>
+			<div>
+				<button class="no-bg-btn white">
+					Login
+				</button>
+				<button class="btn-primary">
+					Sign up
+				</button>
+			</div>
+			<div class="rect"></div>
+			<!-- <ol>
+				{{! 2. The each helper can insert an array of data }}
+				{{#each quotes}}
+					<li>
+						{{quote}}
+					</li>
+				{{/each}}
+			</ol> -->
+
+			<!-- {{! 4. Call to custom Helper function, which will generate html tags without the triple-stash }}
+			{{makeLink "Yogi Berra Museum" "http://yogiberramuseum.org/"}}<br /> -->
+		</script>
+		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+		<script src="./js/navigation.js"></script>
+	</body>
 </html>
