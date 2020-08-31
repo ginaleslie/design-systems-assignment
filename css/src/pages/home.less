@@ -1,0 +1,55 @@
+.floating-right {
+	position: absolute;
+	right: 0;
+	margin-top: -60px;
+}
+.border-card {
+	border: 2px solid #0ec9a4;
+	border-radius: 0px;
+	position: absolute;
+	width: 90%;
+	height: 78%;
+	top: 38px;
+	right: 6px;
+	z-index: 1;
+}
+.border-card-2 {
+	border: 2px solid @primary-variant-color-shade-darker;
+	border-radius: 0px;
+	position: absolute;
+	width: 90%;
+	height: 78%;
+	top: 85px;
+	right: 6px;
+	z-index: 1;
+}
+.absolute-zi {
+	position: relative;
+	z-index: 20;
+}
+.right {
+	text-align: right;
+}
+.img-tri {
+	position: absolute;
+	margin-top: -60px;
+	z-index: -1;
+}
+@media only screen and (max-width: 767px) {
+	.floating-right {
+		width: 40px;
+		height: auto;
+		margin-top: -20px;
+	}
+	.img-tri {
+		width: 90px;
+		height: auto;
+		margin-top: -45px;
+	}
+	.border-card {
+		top: 78px;
+	}
+	.border-card-2 {
+		top: 78px;
+	}
+}

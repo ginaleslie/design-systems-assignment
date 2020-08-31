@@ -7,8 +7,19 @@ button {
 	background-color: transparent;
 }
 .btn-primary {
-	background-color: @primary-color !important;
-	color: @primary-dark !important;
-	padding: 5px 15px !important;
+	background-color: @primary-color;
+	color: @primary-dark;
+	padding: 7px 19px;
 	border-radius: 0px;
+}
+.border {
+	border: 2px solid @primary-color-dark;
+
+	border-radius: 0px;
+	position: absolute;
+	width: 100%;
+	top: 16px;
+	left: 10px;
+	height: 32px;
+	z-index: -1;
 }
