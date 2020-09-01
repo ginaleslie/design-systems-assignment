@@ -211,9 +211,9 @@ select {
   border: 2px solid #0ec9a4;
   border-radius: 0px;
   position: absolute;
-  width: 90%;
-  height: 78%;
-  top: 38px;
+  width: 85%;
+  height: 75%;
+  top: 42px;
   right: 6px;
   z-index: 1;
 }
@@ -221,9 +221,9 @@ select {
   border: 2px solid #7bd0c2;
   border-radius: 0px;
   position: absolute;
-  width: 90%;
-  height: 78%;
-  top: 85px;
+  width: 85%;
+  height: 75%;
+  top: 90px;
   right: 6px;
   z-index: 1;
 }
@@ -251,10 +251,10 @@ select {
     margin-top: -45px;
   }
   .border-card {
-    top: 78px;
+    display: none;
   }
   .border-card-2 {
-    top: 78px;
+    display: none;
   }
 }
 button {

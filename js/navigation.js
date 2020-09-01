@@ -101,6 +101,7 @@ $(function () {
 
 	$("#navData").append(navItems);
 
+	// hamburger menu
 	$(".cross").hide();
 	$(".menu").hide();
 	$(".hamburger").click(function () {
