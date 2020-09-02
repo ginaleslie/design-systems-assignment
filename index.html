@@ -11,9 +11,9 @@
 
 		<title>Fela Education</title>
 	</head>
-	<body id="bootstrap-overrides">
+	<body>
 		<nav id="navData" class="white"></nav>
-		<main id="main">
+		<main>
 			<section class="max-width">
 				<div class="row pt-md-5 pb-md-5 mt-2">
 					<div class="col-12 col-md-6 text-center mt-3">
@@ -32,7 +32,7 @@
 									<br />
 									<input type="text" class="col-12" />
 								</div>
-								<div class="col-md-6 col-12 pr-md-4 pr-0 pl-0">
+								<div class="col-md-6 col-12 pr-md-4 pr-0 pl-0 pt-md-0 pt-3">
 									<label> Email </label>
 									<br />
 									<input type="text" class="col-12" />
@@ -115,8 +115,31 @@
 				<h1 class="center grey-two">Choose between our best sellers</h1>
 			</section>
 		</main>
+		<section id="carousalData"></section>
 		<footer id="footerData"></footer>
+		<script id="carousal-template" type="text/x-handlebars-template">
+			<section class="wrapperAll">
+				<section class="sliderComplete">
+					<section class="wrapper">
+						<ul class="slider">
+							{{#each bestSellers}}
+								<li>
+									{{{course}}}
+								</li>
+							{{/each}}
+						</ul>
+					</section>
 
+					<div title="before" class="close carousal-btn">
+						<img src="./images/Component 2 copy.svg" />
+					</div>
+
+					<div title="after" class="open carousal-btn">
+						<img src="./images/Component 2.svg" />
+					</div>
+				</section>
+			</section>
+		</script>
 		<script id="nav-template" type="text/x-handlebars-template">
 			<div class="logo white">
 				{{makeLink "fela." "./index.html" link="logo"}}
@@ -175,17 +198,6 @@
 				</div>
 			</div>
 			<div class="rect"></div>
-			<!-- <ol>
-				{{! 2. The each helper can insert an array of data }}
-				{{#each quotes}}
-					<li>
-						{{quote}}
-					</li>
-				{{/each}}
-			</ol> -->
-
-			<!-- {{! 4. Call to custom Helper function, which will generate html tags without the triple-stash }}
-			{{makeLink "Yogi Berra Museum" "http://yogiberramuseum.org/"}}<br /> -->
 		</script>
 		<script id="footer-template" type="text/x-handlebars-template">
 			<div class="row">
@@ -263,5 +275,6 @@
 		<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
 		<script src="./js/navigation.js"></script>
+		<script src="./js/carousal.js"></script>
 	</body>
 </html>
