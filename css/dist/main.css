@@ -66,7 +66,7 @@ h4 {
 }
 h5 {
   font-family: "opensans-semibold";
-  font-size: 23px;
+  font-size: 21px;
   letter-spacing: 0.1px;
   line-height: 26px;
   margin: 14px 0;
@@ -250,6 +250,7 @@ select {
   position: absolute;
   margin-top: -60px;
   z-index: -1;
+  left: 0;
 }
 @media only screen and (max-width: 767px) {
   .floating-right {
@@ -392,11 +393,17 @@ a {
   .slider li .cover {
     width: 100%;
   }
+  .slider li {
+    width: 180px;
+  }
 }
 @media screen and (orientation: portrait) {
   .sliderComplete .wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
+  }
+  .slider li {
+    width: 180px;
   }
   .slider li .cover {
     width: 100%;
