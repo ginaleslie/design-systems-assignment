@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/dist/main.css" />
+		<link
+			rel="stylesheet"
+			href="./node_modules/bootstrap/dist/css/bootstrap-grid.css"
+		/>
+
+		<title>Fela Education</title>
+	</head>
+
+    <body id="bootstrap-overrides">
+        <nav id="navData" class="white"></nav>
+        <br>
+        <div class="image-with-text-box">
+            <img src="./images/finance.jpg" alt="Girl putting coins in a jar" width="540" height="300"/>
+            <div class="text-box box1">
+                <h4 >Lorem ipsum dolor</h4>
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                     Pellentesque eget volutpat sapien. Aenean at lectus mollis, sodales tellus in, suscipit sapien.
+                     <br></br>
+                    Duis eleifend imperdiet turpis, eu mattis tortor porta sed. 
+                    Cras at dictum massa, a maximus sapien. Ut ac elementum sem. 
+                    Aenean pulvinar faucibus feugiat.
+                </p>
+            </div>
+    
+        </div>
+            </div>
+          </div>
+          
+          
+
+
+        <div class="accordion-container">
+            <h2>What will you learn</h2>
+            <div class="set">
+              <a href="#">
+                Tax-Advantaged Accounts
+                <i class="fa fa-plus"></i>
+              </a>
+              <div class="content">
+                <p>Accounts can be tax-advantaged in different ways. 401(k)s and IRAs are tax-deferred accounts. Here we give an example on how it can be used.</p>
+              </div>
+            </div>
+            <div class="set">
+              <a href="#">
+                Setting up your tax-advantaged accounts
+                <i class="fa fa-plus"></i>
+              </a>
+              <div class="content">
+                <p> Installing microsoft Excel and fetching your bank details.</p>
+              </div>
+            </div>
+            <div class="set">
+              <a href="#">
+               Defined-Benefit Plans
+                <i class="fa fa-plus"></i>
+              </a>
+              <div class="content">
+                <p>These retirement plans, also known as pensions, are funded by employers. They guarantee a specific retirement benefit based on your salary history.</p>
+              </div>
+            </div>
+            <div class="set">
+              <a href="#">
+              401(k)s and Company Plans
+                <i class="fa fa-plus"></i> 
+              </a>
+              <div class="content">
+                <p> These are employer-sponsored defined-contribution plans that are funded by employees  </p>
+              </div>
+            </div>
+            <div class="set">
+              <a href="#">
+               Setting up your tax-advantaged accounts
+                <i class="fa fa-plus"></i> 
+              </a>
+              <div class="content">
+                <p> Installing microsoft Excel and fetching your bank details. </p>
+              </div>
+            </div>
+            <div class="set">
+              <a href="#">
+               Defined-Benefit Plans
+                <i class="fa fa-plus"></i> 
+              </a>
+              <div class="content">
+                <p>These retirement plans, also known as pensions, are funded by employers. They guarantee a specific retirement benefit based on your salary history </p>
+              </div>
+            </div>
+             <div class="set">
+              <a href="#">
+              401(k)s and Company Plans
+                <i class="fa fa-plus"></i> 
+              </a>
+              <div class="content">
+                <p> These are employer-sponsored defined-contribution plans that are funded by employees  </p>
+              </div>
+            </div>
+          </div>
+
+          $(document).ready(function() {
+            $(".set > a").on("click", function() {
+              if ($(this).hasClass("active")) {
+                $(this).removeClass("active");
+                $(this)
+                  .siblings(".content")
+                  .slideUp(200);
+                $(".set > a i")
+                  .removeClass("fa-minus")
+                  .addClass("fa-plus");
+              } else {
+                $(".set > a i")
+                  .removeClass("fa-minus")
+                  .addClass("fa-plus");
+                $(this)
+                  .find("i")
+                  .removeClass("fa-plus")
+                  .addClass("fa-minus");
+                $(".set > a").removeClass("active");
+                $(this).addClass("active");
+                $(".content").slideUp(200);
+                $(this)
+                  .siblings(".content")
+                  .slideDown(200);
+              }
+            });
+          });
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    <footer id="footerData"></footer>
+
+		<script id="nav-template" type="text/x-handlebars-template">
+			<div class="logo white">
+				{{makeLink "fela." "./index.html" link="logo"}}
+			</div>
+			<ul class="nav-links hide">
+				<li class="pr">
+					{{makeLink "Insuarance" "./index.html"}}
+                </li>
+                <li class="pr">
+					{{makeLink "Investing" "./index.html"}}
+                </li>
+                <li class="pr">
+					{{makeLink "Financial" "./index.html"}}
+				</li>
+				<li class="pr">
+					{{makeLink "Pricing" "#"}}
+				</li>
+				<li>
+					{{makeLink "Teaching" "./index.html"}}
+				</li>
+			</ul>
+			<div class="hide">
+				<button class="no-bg-btn white">
+					Login
+				</button>
+				<button class="btn-primary">
+					Sign up
+				</button>
+			</div>
+			<div class="mobile">
+				<div class="hamburger">
+					<div class="hb"></div>
+					<div class="hb"></div>
+					<div class="hb"></div>
+				</div>
+				<div class="cross">
+					<div class="cr"></div>
+					<div class="cr"></div>
+				</div>
+				<div class="menu">
+					<ul>
+						<li>
+							{{makeLink "Courses" "./index.html"}}
+						</li>
+
+						<li>
+							{{makeLink "Pricing" "#"}}
+						</li>
+
+						<li>
+							{{makeLink "Teaching" "./index.html"}}
+						</li>
+
+						<li>
+							LINK FOUR
+						</li>
+
+						<li>
+							LINK FIVE
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="rect"></div>
+			<!-- <ol>
+				{{! 2. The each helper can insert an array of data }}
+				{{#each quotes}}
+					<li>
+						{{quote}}
+					</li>
+				{{/each}}
+			</ol> -->
+
+			<!-- {{! 4. Call to custom Helper function, which will generate html tags without the triple-stash }}
+			{{makeLink "Yogi Berra Museum" "http://yogiberramuseum.org/"}}<br /> -->
+		</script>
+		<script id="footer-template" type="text/x-handlebars-template">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4  p-4 p-md-5 bg-primary">
+					<div class="mt-3">
+						<div class="pt-md-9 pt-sm-9 pt-9 logo">
+							{{makeLink "fela." "./index.html" link="logo"}}
+						</div>
+						<p class="pt-md-3 pt-sm-3 pt-3">
+							{{description}}
+						</p>
+					</div>
+					<div class="row pt-4 d-flex align-items-center">
+						<img
+							src="./images/linkedin 1.svg"
+							alt="Youtube"
+							class="mr-3 sm-s"
+						/>
+						<img
+							src="./images/instagram 1.svg"
+							alt="Instagram"
+							class="mr-3 sm"
+						/>
+						<img src="./images/facebook 1.svg" alt="Facebook" class="mr-3 sm" />
+						<img src="./images/twitter 1.svg" alt="Twitter" class="mr-3 sm-s" />
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-8 p-4 p-md-5 bg-dark white">
+					<div class="row mt-3">
+						<div class="col-6 col-md-6 col-lg-3 pl-0">
+							<h6>
+								Courses
+							</h6>
+							{{#each linksOne}}
+								<li>
+									{{link}}
+								</li>
+							{{/each}}
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 pl-0">
+							<h6>
+								Pricing
+							</h6>
+							{{#each linksTwo}}
+								<li>
+									{{link}}
+								</li>
+							{{/each}}
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mt-4 mt-md-4 mt-lg-0 pl-0">
+							<h6>
+								Teaching
+							</h6>
+							{{#each linksThree}}
+								<li>
+									{{link}}
+								</li>
+							{{/each}}
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mt-4 mt-md-4 mt-lg-0 pl-0">
+							<h6>
+								Business
+							</h6>
+							{{#each linksFour}}
+								<li>
+									{{link}}
+								</li>
+							{{/each}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+		<script src="./js/navigation.js"></script>
+</body>
+</html>
