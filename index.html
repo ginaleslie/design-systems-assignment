@@ -25,12 +25,12 @@
 							Sign up and half your financial stress worries with our courses
 						</h2>
 
-						<form class="home-form">
+						<div class="home-form">
 							<div class="row pt-5 pb-3">
 								<div class="col-md-6 col-12 pr-md-4 pr-0 pl-0">
 									<label> Name </label>
 									<br />
-									<input type="text" class="col-12" />
+									<input id="myInput" type="text" class="col-12" />
 								</div>
 								<div class="col-md-6 col-12 pr-md-4 pr-0 pl-0 pt-md-0 pt-3">
 									<label> Email </label>
@@ -45,12 +45,12 @@
 
 							<button
 								class="btn btn-primary mb-md-0 mb-4 col-md-6 col-lg-5 col-12"
-								type="submit"
+								id="nameBtn"
 							>
 								<div class="border"></div>
 								Get started for free
 							</button>
-						</form>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -112,7 +112,6 @@
 			</section>
 			<section class="max-width mt-5 pt-md-2 pt-0 pr-2 pl-2 grey-two pb-5">
 				<img src="./images/Group 18.svg" class="img-tri" />
-				<h1 class="center grey-two">Choose between our best sellers</h1>
 			</section>
 		</main>
 		<section id="carousalData"></section>
@@ -120,6 +119,11 @@
 		<script id="carousal-template" type="text/x-handlebars-template">
 			<section class="wrapperAll">
 				<section class="sliderComplete">
+					<section class="wrapper">
+						<h1 class="grey-two  pt-3 pb-4">
+							Choose between our bestSellers
+						</h1>
+					</section>
 					<section class="wrapper">
 						<ul class="slider">
 							{{#each bestSellers}}
@@ -276,5 +280,6 @@
 		<script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
 		<script src="./js/navigation.js"></script>
 		<script src="./js/carousal.js"></script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>

@@ -12,64 +12,24 @@
 		<title>Fela Education</title>
 	</head>
 	<body>
-		<nav id="navData" class="white"></nav>
+		<nav id="navData" class="white zindex-three"></nav>
 		<main>
-			<section class="max-width">
-				<div class="row pt-md-5 pb-md-5 mt-2">
-					<div class="col-12 col-md-6 text-center mt-3">
-						<img src="../images/Component 5.png" class="col-md-9 col-11 hide" />
-					</div>
-
-					<div class="col-12 col-md-6 mt-3 align-items-lg-center pr-md-5 pr-3">
-						<h2 class="grey-two" id="greeting"></h2>
-
-						<div class="row pt-5 pb-3">
-							<div class="col-12 col-md-6 p-md-0">
-								<img
-									src="../images/Mask Group (1) copy 5.png"
-									class="col-12 p-0"
-								/>
-							</div>
-							<div class="col-12 col-md-6">
-								<h5 class="grey-two">Lorem ipsum dolor sit amet consectetur</h5>
-
-								<p class="grey-one pb-3">
-									Samantha Smith<span class="grey-two float-r">Free</span>
-								</p>
-								<button
-									class="btn btn-primary mb-md-0 mb-4 col-12"
-									type="submit"
-								>
-									<div class="border"></div>
-									Get started for free
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
+			<section class="bg-black white center pt-md-5 pt-4 pb-md-4 pb-3">
+				<img class="bg-triangle zindex-one" src="../images/Component 6.svg" />
+				<h1 class="pt-5 zindex-two">All courses</h1>
+				<h5 class="pb-5 zindex-two">
+					Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+					elit. Dipsum dolor sit amet.
+				</h5>
 			</section>
 			<section id="carousalData"></section>
-			<!-- <section class="bg-light">
-				<div class="max-width mt-5 pt-md-2 pt-0 pr-2 pl-2 grey-two pb-3">
-					<h1 class="grey-two center pt-5 pb-4">Top free</h1>
-					<section class="carousalData"></section>
-				</div>
-			</section>
-			<div class="max-width mt-5 pt-md-3 pt-0 pr-2 pl-2 grey-two pb-1">
-				<h1 class="grey-two center pt-2 pb-4">Student top picks</h1>
-				<section class="carousalData"></section>
-			</div>
-			<div class="max-width mt-3 pt-md-0 pt-0 pr-2 pl-2 grey-two pb-3">
-				<h1 class="grey-two center pb-4">Student top picks</h1>
-				<section class="carousalData"></section>
-			</div> -->
 		</main>
 
 		<footer id="footerData"></footer>
 		<script id="carousal-template" type="text/x-handlebars-template">
 			<section class="bg-light">
 				<div
-					class="max-width  pt-md-1 pt-0 pr-2 pl-2 grey-two pb-md-4 pb-0 mt-5"
+					class="max-width  pt-md-1 pt-0 pr-2 pl-2 grey-two pb-md-4 pb-0 mt-0"
 				>
 					<section class="wrapperAll">
 						<section class="sliderComplete">
@@ -172,10 +132,11 @@
 				</li>
 			</ul>
 			<div class="hide">
-				<button class="no-bg-btn white" id="storedName">
+				<button class="no-bg-btn white">
+					Login
 				</button>
 				<button class="btn-primary">
-					My courses
+					Sign up
 				</button>
 			</div>
 			<div class="mobile">
@@ -299,6 +260,5 @@
 		<script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
 		<script src="../js/navigation.js"></script>
 		<script src="../js/carousal.js"></script>
-		<script src="../js/main.js"></script>
 	</body>
 </html>
