@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/dist/main.css" />
+		<link
+			rel="stylesheet"
+			href="../node_modules/bootstrap/dist/css/bootstrap-grid.css"
+		/>
+
+		<title>Fela Education</title>
+	</head>
+	<body>
+		<nav id="navData" class="white"></nav>
+		<main>
+			<section class="max-width">
+				<div class="row pt-md-5 pb-md-5 mt-2">
+					<div class="col-12 col-md-6 text-center mt-3">
+						<img src="../images/Component 6.png" class="col-md-9 col-11 hide" />
+					</div>
+
+					<div class="col-12 col-md-6 mt-3 align-items-lg-center pr-md-5 pr-3">
+						<h2 class="grey-two">
+							Do you have the skills and would like to make your own course?
+							<br />
+							Apply to become a teacher
+						</h2>
+
+						<form class="home-form">
+							<div class="row pt-5 pb-3">
+								<div class="col-10 pl-0 pr-md-4 pr-0 pb-5">
+									<label> Name </label>
+									<br />
+									<input type="text" class="col-12" />
+								</div>
+								<div class="col-10 pl-0 pr-md-4 pr-0 pb-5">
+									<label> Email </label>
+									<br />
+									<input type="text" class="col-12" />
+								</div>
+								<div>
+									<label> CV </label>
+									<div class="cv-btn">
+										<input type="file" id="real-file" hidden="hidden" />
+										<button type="button" id="custom-button">UPLOAD CV</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="apply-btn float-right">
+								<button
+									class="btn btn-primary mb-md-0 mb-4 col-md-6 col-lg-5 col-12 btn-apply"
+									type="submit"
+								>
+									<div class="border"></div>
+									Apply now
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="bg-light">
+				<img src="../images/Group 9.svg" class="floating-right" />
+				<div class="max-width pt-4 pt-md-5">
+					<h1 class="center grey-two">
+						What you get out of <br />
+						joining us
+					</h1>
+					<div class="row p-md-5 p-3">
+						<div class="col-md-4 col-12 p-3 p-md-4">
+							<div
+								class="pr-3 pl-3 pt-5 mt-md-5 mt-0 pb-3 bg-variant absolute-zi"
+							>
+								<h4 class="pb-3">Retirement savings</h4>
+								<p class="pb-3">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+									do eiusmod tempor incididunt ut labore et dolore.
+									<br /><br />Nostrud ipsum dolor sit amet, consectetur
+									adipiscing elit sed do.
+								</p>
+								<h6 class="right">View &#x2192;</h6>
+							</div>
+							<div class="border-card-2"></div>
+						</div>
+
+						<div class="col-md-4 col-12 p-3 p-md-4">
+							<div class="pr-3 pl-3 pt-5 pb-3 bg-tertiary absolute-zi">
+								<h4 class="pb-3">Your best insurance</h4>
+								<p class="pb-3">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+									do eiusmod tempor incididunt ut labore et dolore.
+									<br /><br />Nostrud ipsum dolor sit amet, consectetur
+									adipiscing elit sed do.
+								</p>
+								<h6 class="right">View &#x2192;</h6>
+							</div>
+							<div class="border-card"></div>
+						</div>
+
+						<div class="col-md-4 col-12 p-3 p-md-4">
+							<div
+								class="pr-3 pl-3 pt-5 pb-3 bg-variant absolute-zi mt-md-5 mt-0"
+							>
+								<h4 class="pb-3">Setting up a budget</h4>
+								<p class="pb-3">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+									do eiusmod tempor incididunt ut labore et dolore.
+									<br /><br />Nostrud ipsum dolor sit amet, consectetur
+									adipiscing elit sed do.
+								</p>
+								<h6 class="right">View &#x2192;</h6>
+							</div>
+							<div class="border-card-2"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footerData"></footer>
+		<script id="carousal-template" type="text/x-handlebars-template">
+			<section class="wrapperAll">
+				<section class="sliderComplete">
+					<section class="wrapper">
+						<ul class="slider">
+							{{#each topFree}}
+								<li>
+									{{{course}}}
+								</li>
+							{{/each}}
+						</ul>
+					</section>
+
+					<div title="before" class="close carousal-btn">
+						<img src="../images/Component 2 copy.svg" />
+					</div>
+
+					<div title="after" class="open carousal-btn">
+						<img src="../images/Component 2.svg" />
+					</div>
+				</section>
+			</section>
+		</script>
+		<script id="nav-template" type="text/x-handlebars-template">
+			<div class="logo white">
+				{{makeLink "fela." "./index.html" link="logo"}}
+			</div>
+			<ul class="nav-links hide">
+				<li class="pr">
+					{{makeLink "Courses" "./index.html"}}
+				</li>
+				<li class="pr">
+					{{makeLink "Pricing" "#"}}
+				</li>
+				<li>
+					{{makeLink "Teaching" "./index.html"}}
+				</li>
+			</ul>
+			<div class="hide">
+				<button class="no-bg-btn white">
+					Login
+				</button>
+				<button class="btn-primary">
+					Sign up
+				</button>
+			</div>
+			<div class="mobile">
+				<div class="hamburger">
+					<div class="hb"></div>
+					<div class="hb"></div>
+					<div class="hb"></div>
+				</div>
+				<div class="cross">
+					<div class="cr"></div>
+					<div class="cr"></div>
+				</div>
+				<div class="menu">
+					<ul>
+						<li>
+							{{makeLink "Courses" "./index.html"}}
+						</li>
+
+						<li>
+							{{makeLink "Pricing" "#"}}
+						</li>
+
+						<li>
+							{{makeLink "Teaching" "./index.html"}}
+						</li>
+
+						<li>
+							LINK FOUR
+						</li>
+
+						<li>
+							LINK FIVE
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="rect"></div>
+		</script>
+		<script id="footer-template" type="text/x-handlebars-template">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4  p-4 p-md-5 bg-primary">
+					<div class="mt-3">
+						<div class="pt-md-9 pt-sm-9 pt-9 logo">
+							{{makeLink "fela." "./index.html" link="logo"}}
+						</div>
+						<p class="pt-md-3 pt-sm-3 pt-3">
+							{{description}}
+						</p>
+					</div>
+					<div class="row pt-4 d-flex align-items-center">
+						<img
+							src="../images/linkedin 1.svg"
+							alt="Youtube"
+							class="mr-3 sm-s"
+						/>
+						<img
+							src="../images/instagram 1.svg"
+							alt="Instagram"
+							class="mr-3 sm"
+						/>
+						<img
+							src="../images/facebook 1.svg"
+							alt="Facebook"
+							class="mr-3 sm"
+						/>
+						<img
+							src="../images/twitter 1.svg"
+							alt="Twitter"
+							class="mr-3 sm-s"
+						/>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-8 p-4 p-md-5 bg-dark white">
+					<div class="row mt-3">
+						<div class="col-6 col-md-6 col-lg-3 pl-0">
+							<h6>
+								Courses
+							</h6>
+							{{#each linksOne}}
+								<li>
+									{{link}}
+								</li>
+							{{/each}}
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 pl-0">
+							<h6>
+								Pricing
+							</h6>
+							{{#each linksTwo}}
+								<li>
+									{{link}}
+								</li>
+							{{/each}}
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mt-4 mt-md-4 mt-lg-0 pl-0">
+							<h6>
+								Teaching
+							</h6>
+							{{#each linksThree}}
+								<li>
+									{{link}}
+								</li>
+							{{/each}}
+						</div>
+						<div class="col-6 col-md-6 col-lg-3 mt-4 mt-md-4 mt-lg-0 pl-0">
+							<h6>
+								Business
+							</h6>
+							{{#each linksFour}}
+								<li>
+									{{link}}
+								</li>
+							{{/each}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
+		<script src="../js/navigation.js"></script>
+		<script src="../js/carousal.js"></script>
+	</body>
+</html>
