@@ -1,100 +1,106 @@
 @font-face {
-  font-family: "courgette-regular";
-  src: url("../fonts/courgette-regular-webfont.woff2") format("woff2"), url("../fonts/courgette-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "courgette-regular";
+	src: url("../fonts/courgette-regular-webfont.woff2") format("woff2"),
+		url("../fonts/courgette-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: "robotoslab-regular";
-  src: url("../fonts/robotoslab-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/robotoslab-variablefont_wght-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "robotoslab-regular";
+	src: url("../fonts/robotoslab-variablefont_wght-webfont.woff2")
+			format("woff2"),
+		url("../fonts/robotoslab-variablefont_wght-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: "robotoslab-bold";
-  src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "robotoslab-bold";
+	src: url("../fonts/RobotoSlab-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: "opensans-bold";
-  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "opensans-bold";
+	src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"),
+		url("../fonts/opensans-bold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: "opensans-regular";
-  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "opensans-regular";
+	src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+		url("../fonts/opensans-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: "opensans-semibold";
-  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: "opensans-semibold";
+	src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"),
+		url("../fonts/opensans-semibold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 h1 {
-  font-family: "robotoslab-bold";
-  font-size: 37px;
-  letter-spacing: 0.6px;
+	font-family: "robotoslab-bold";
+	font-size: 37px;
+	letter-spacing: 0.6px;
 }
 h2 {
-  font-family: "robotoslab-bold";
-  font-size: 30px;
-  letter-spacing: 0.6px;
+	font-family: "robotoslab-bold";
+	font-size: 30px;
+	letter-spacing: 0.6px;
 }
 h3 {
-  font-family: "opensans-semibold";
-  font-size: 27px;
-  letter-spacing: 0.2px;
+	font-family: "opensans-semibold";
+	font-size: 27px;
+	letter-spacing: 0.2px;
 }
 h4 {
-  font-family: "robotoslab-regular";
-  font-size: 25px;
-  letter-spacing: 0.2px;
+	font-family: "robotoslab-regular";
+	font-size: 25px;
+	letter-spacing: 0.2px;
 }
 h5 {
-  font-family: "opensans-semibold";
-  font-size: 23px;
-  letter-spacing: 0.2px;
+	font-family: "opensans-semibold";
+	font-size: 23px;
+	letter-spacing: 0.2px;
 }
 h6 {
-  font-family: "opensans-bold";
-  font-size: 17px;
-  letter-spacing: 0.2px;
-  margin: 8px 0;
+	font-family: "opensans-bold";
+	font-size: 17px;
+	letter-spacing: 0.2px;
+	margin: 8px 0;
 }
 p,
 .p,
 body {
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.2px;
-  font-family: "opensans-regular";
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.2px;
+	font-family: "opensans-regular";
 }
 .logo {
-  font-family: "courgette-regular";
-  font-size: 23px;
+	font-family: "courgette-regular";
+	font-size: 23px;
 }
 .logo-serif {
-  font-size: 19px;
-  font-family: "opensans-regular";
+	font-size: 19px;
+	font-family: "opensans-regular";
 }
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 /* Remove default padding */
 ul[class],
 ol[class] {
-  padding: 0;
+	padding: 0;
 }
 /* Remove default margin */
 body,
@@ -111,318 +117,314 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+	margin: 0;
 }
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
 }
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
 ol[class] {
-  list-style: none;
+	list-style: none;
 }
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+	text-decoration-skip-ink: auto;
 }
 /* Make images easier to work with */
 img {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 /* Natural flow and rhythm in articles by default */
 article > * + * {
-  margin-top: 1em;
+	margin-top: 1em;
 }
 /* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 .row,
 .container,
 .container-fluid {
-  margin: 0 !important;
-  padding: 0;
+	margin: 0 !important;
+	padding: 0;
 }
 .grey-two {
-  color: #585858;
+	color: #585858;
 }
 .white {
-  color: #ffffff;
+	color: #ffffff;
 }
 .bg-primary {
-  background-color: #00ffcb;
+	background-color: #00ffcb;
 }
 .bg-dark {
-  background-color: #08090a;
+	background-color: #08090a;
 }
-<<<<<<< Updated upstream
-=======
+
 .bg-light {
-  background-color: aliceBlue;
+	background-color: aliceBlue;
 }
 .bg-variant {
-  background-color: #abfcef;
+	background-color: #abfcef;
 }
 .bg-primary-dark {
-  background-color: #7bd0c2;
+	background-color: #7bd0c2;
 }
 .bg-tertiary {
-  background-color: #00ffcb;
+	background-color: #00ffcb;
 }
 .floating-right {
-  position: absolute;
-  right: 0;
-  margin-top: -60px;
+	position: absolute;
+	right: 0;
+	margin-top: -60px;
 }
 .border-card {
-  border: 2px solid #0ec9a4;
-  border-radius: 0px;
-  position: absolute;
-  width: 85%;
-  height: 75%;
-  top: 42px;
-  right: 6px;
-  z-index: 1;
+	border: 2px solid #0ec9a4;
+	border-radius: 0px;
+	position: absolute;
+	width: 85%;
+	height: 75%;
+	top: 42px;
+	right: 6px;
+	z-index: 1;
 }
 .border-card-2 {
-  border: 2px solid #7bd0c2;
-  border-radius: 0px;
-  position: absolute;
-  width: 85%;
-  height: 75%;
-  top: 90px;
-  right: 6px;
-  z-index: 1;
+	border: 2px solid #7bd0c2;
+	border-radius: 0px;
+	position: absolute;
+	width: 85%;
+	height: 75%;
+	top: 90px;
+	right: 6px;
+	z-index: 1;
 }
 .absolute-zi {
-  position: relative;
-  z-index: 20;
+	position: relative;
+	z-index: 20;
 }
 .right {
-  text-align: right;
+	text-align: right;
 }
 .float-r {
-  float: right;
+	float: right;
 }
 .img-tri {
-  position: absolute;
-  margin-top: -60px;
-  z-index: -1;
-  left: 0;
+	position: absolute;
+	margin-top: -60px;
+	z-index: -1;
+	left: 0;
 }
 @media only screen and (max-width: 767px) {
-  .floating-right {
-    width: 40px;
-    height: auto;
-    margin-top: -20px;
-  }
-  .img-tri {
-    width: 90px;
-    height: auto;
-    margin-top: -45px;
-  }
-  .border-card {
-    display: none;
-  }
-  .border-card-2 {
-    display: none;
-  }
+	.floating-right {
+		width: 40px;
+		height: auto;
+		margin-top: -20px;
+	}
+	.img-tri {
+		width: 90px;
+		height: auto;
+		margin-top: -45px;
+	}
+	.border-card {
+		display: none;
+	}
+	.border-card-2 {
+		display: none;
+	}
 }
 .apply-btn {
-  padding-left: 300px;
+	padding-left: 300px;
 }
 .cv-btn {
-  border: 1px solid #d3d3d3;
-  border-radius: 2px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
+	border: 1px solid #d3d3d3;
+	border-radius: 2px;
 }
+
 @media only screen and (max-width: 767px) {
-  .apply-btn {
-    padding-left: 0px;
-    padding-top: 10px;
-  }
-  .btn-apply {
-    width: 10px;
-  }
+	.apply-btn {
+		padding-left: 0px;
+		padding-top: 10px;
+	}
+	.btn-apply {
+		width: 10px;
+	}
 }
-button {
-  cursor: pointer;
-  border: none !important;
-  background-color: transparent;
->>>>>>> Stashed changes
+
+.button {
+	cursor: pointer;
+	border: none !important;
+	background-color: transparent;
 }
+
 @media only screen and (max-width: 767px) {
-  .apply-btn {
-    padding-left: 0px;
-    padding-top: 10px;
-  }
-  .btn-apply {
-    width: 10px;
-  }
+	.apply-btn {
+		padding-left: 0px;
+		padding-top: 10px;
+	}
+	.btn-apply {
+		width: 10px;
+	}
 }
->>>>>>> Stashed changes
+
 button {
-  cursor: pointer;
-  border: none !important;
-  background-color: none;
+	cursor: pointer;
+	border: none !important;
+	background-color: none;
 }
 .no-bg-btn {
-  background-color: transparent;
+	background-color: transparent;
 }
 .btn-primary {
-  background-color: #00ffcb !important;
-  color: #08090a !important;
-  padding: 5px 15px !important;
-  border-radius: 0px;
+	background-color: #00ffcb !important;
+	color: #08090a !important;
+	padding: 5px 15px !important;
+	border-radius: 0px;
 }
 nav {
-  background-color: #08090a;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 15px 10px 15px;
+	background-color: #08090a;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 15px 10px 15px;
 }
 .nav-links {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 .pr {
-  padding-right: 30px;
+	padding-right: 30px;
 }
 .rect {
-  background-color: #00ffcb;
-  height: 13px;
-  position: absolute;
-  top: 54px;
-  width: 140px;
-  z-index: 3;
+	background-color: #00ffcb;
+	height: 13px;
+	position: absolute;
+	top: 54px;
+	width: 140px;
+	z-index: 3;
 }
 .mobile {
-  display: none;
+	display: none;
 }
 .hamburger {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  cursor: pointer;
-  background-color: none;
-  color: none;
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	cursor: pointer;
+	background-color: none;
+	color: none;
 }
 .cross {
-  position: absolute;
-  top: 30px;
-  right: 18px;
-  cursor: pointer;
-  background-color: none;
-  color: none;
-  width: 28px;
-  height: 28px;
+	position: absolute;
+	top: 30px;
+	right: 18px;
+	cursor: pointer;
+	background-color: none;
+	color: none;
+	width: 28px;
+	height: 28px;
 }
 .hb {
-  margin-top: 5px;
-  height: 2px;
-  width: 28px;
-  background-color: #ffffff;
+	margin-top: 5px;
+	height: 2px;
+	width: 28px;
+	background-color: #ffffff;
 }
 .cr {
-  height: 2px;
-  width: 25px;
-  background-color: #ffffff;
+	height: 2px;
+	width: 25px;
+	background-color: #ffffff;
 }
 .cr:first-child {
-  transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 .cr:last-child {
-  margin-top: -2px;
-  transform: rotate(-45deg);
+	margin-top: -2px;
+	transform: rotate(-45deg);
 }
 .menu {
-  z-index: 2;
-  top: 59px;
-  left: 0;
-  font-weight: bold;
-  font-size: 0.8em;
-  width: 100%;
-  background: #f1f1f1;
-  position: absolute;
-  text-align: center;
-  font-size: 12px;
+	z-index: 2;
+	top: 59px;
+	left: 0;
+	font-weight: bold;
+	font-size: 0.8em;
+	width: 100%;
+	background: #f1f1f1;
+	position: absolute;
+	text-align: center;
+	font-size: 12px;
 }
 .menu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  list-style-image: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
 }
 .menu li {
-  display: block;
-  padding: 15px 0 15px 0;
-  border-bottom: #dddddd 1px solid;
+	display: block;
+	padding: 15px 0 15px 0;
+	border-bottom: #dddddd 1px solid;
 }
 .menu li:hover {
-  display: block;
-  background: #ffffff;
-  padding: 15px 0 15px 0;
-  border-bottom: #dddddd 1px solid;
+	display: block;
+	background: #ffffff;
+	padding: 15px 0 15px 0;
+	border-bottom: #dddddd 1px solid;
 }
 .menu ul li a {
-  text-decoration: none;
-  margin: 0px;
-  color: #666;
+	text-decoration: none;
+	margin: 0px;
+	color: #666;
 }
 .menu ul li a:hover {
-  color: #666;
-  text-decoration: none;
+	color: #666;
+	text-decoration: none;
 }
 .menu a {
-  text-decoration: none;
-  color: #666;
+	text-decoration: none;
+	color: #666;
 }
 .menu a:hover {
-  text-decoration: none;
-  color: #666;
+	text-decoration: none;
+	color: #666;
 }
 footer li,
 footer ul {
-  list-style: none;
-  font-size: 14px;
+	list-style: none;
+	font-size: 14px;
 }
 .sm {
-  height: 20px;
-  width: auto;
+	height: 20px;
+	width: auto;
 }
 .sm-s {
-  height: 25px;
-  width: auto;
+	height: 25px;
+	width: auto;
 }
 @media only screen and (max-width: 767px) {
-  .mobile {
-    display: block;
-  }
-  .hide {
-    display: none;
-  }
-  .rect {
-    height: 10px;
-  }
+	.mobile {
+		display: block;
+	}
+	.hide {
+		display: none;
+	}
+	.rect {
+		height: 10px;
+	}
 }
