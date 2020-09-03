@@ -27,24 +27,6 @@ $(function () {
 		// SafeString prevents the string from being escaped
 	});
 
-	var realFileBtn = document.getElementById("real-file");
-	var customBtn = document.getElementById("custom-button");
-	var customTxt = document.getElementById("custom-text");
-
-	customBtn.addEventListener("click", function() {
-	realFileBtn.click();
-	});
-
-	realFileBtn.addEventListener("change", function() {
-	if (realFileBtn.value) {
-		customTxt.innerHTML = realFileBtn.value.match(
-		/[\/\\]([\w\d\s\.\-\(\)]+)$/
-		)[1];
-	} else {
-		customTxt.innerHTML = "No file chosen, yet.";
-	}
-	});
-
 	// 5b. Pass an attribute to a helper function
 
 	// 6b. You can also pass options that can be used by all
