@@ -16,7 +16,7 @@
 		<main>
 			<section class="bg-black white center pt-md-5 pt-4 pb-md-4 pb-3">
 				<img class="bg-triangle zindex-one" src="../images/Component 6.svg" />
-				<h1 class="pt-5 zindex-two">All courses</h1>
+				<h1 class="pt-5 zindex-two">Financial courses</h1>
 				<h5 class="pb-5 zindex-two">
 					Lorem ipsum dolor sit amet, consectetur adipiscing <br />
 					elit. Dipsum dolor sit amet.
@@ -118,25 +118,28 @@
 		</script>
 		<script id="nav-template" type="text/x-handlebars-template">
 			<div class="logo white">
-				{{makeLink "fela." "./index.html" link="logo"}}
+				{{makeLink "fela." "../index.html" link="logo"}}
 			</div>
 			<ul class="nav-links hide">
 				<li class="pr">
-					{{makeLink "Courses" "./index.html"}}
+					{{makeLink "Insuarance" "#"}}
+				</li>
+				<li class="pr">
+					{{makeLink "Investing" "#"}}
+				</li>
+				<li class="pr">
+					{{makeLink "Financial" "#"}}
 				</li>
 				<li class="pr">
 					{{makeLink "Pricing" "#"}}
 				</li>
 				<li>
-					{{makeLink "Teaching" "./index.html"}}
+					{{makeLink "Teaching" "./teachers-page.html"}}
 				</li>
 			</ul>
 			<div class="hide">
-				<button class="no-bg-btn white">
-					Login
-				</button>
 				<button class="btn-primary">
-					Sign up
+					My courses
 				</button>
 			</div>
 			<div class="mobile">
@@ -151,24 +154,20 @@
 				</div>
 				<div class="menu">
 					<ul>
-						<li>
-							{{makeLink "Courses" "./index.html"}}
+						<li class="pr">
+							{{makeLink "Insuarance" "#"}}
 						</li>
-
-						<li>
+						<li class="pr">
+							{{makeLink "Investing" "#"}}
+						</li>
+						<li class="pr">
+							{{makeLink "Financial" "#"}}
+						</li>
+						<li class="pr">
 							{{makeLink "Pricing" "#"}}
 						</li>
-
 						<li>
-							{{makeLink "Teaching" "./index.html"}}
-						</li>
-
-						<li>
-							LINK FOUR
-						</li>
-
-						<li>
-							LINK FIVE
+							{{makeLink "Teaching" "./teachers-page.html"}}
 						</li>
 					</ul>
 				</div>
