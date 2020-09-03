@@ -110,41 +110,39 @@
 					</div>
 				</div>
 			</section>
-			<section class="max-width mt-0 pt-md-2 pt-0 pr-2 pl-2 grey-two pb-5">
+			<section class="max-width mt-5 pt-md-2 pt-0 pr-2 pl-2 grey-two pb-5">
 				<img src="./images/Group 18.svg" class="img-tri" />
 			</section>
 		</main>
 		<section id="carousalData"></section>
 		<footer id="footerData"></footer>
 		<script id="carousal-template" type="text/x-handlebars-template">
-			<div class="max-width  pt-md-1 pt-0 pr-2 pl-2 grey-two pb-md-5 pb-0">
-				<section class="wrapperAll">
-					<section class="sliderComplete">
-						<section class="wrapper">
-							<h1 class="grey-two  pt-md-0 pt-3 pb-md-4 pb-1">
-								Best sellers
-							</h1>
-						</section>
-						<section class="wrapper">
-							<ul class="slider">
-								{{#each bestSellers}}
-									<li>
-										{{{course}}}
-									</li>
-								{{/each}}
-							</ul>
-						</section>
-
-						<div title="before" class="close carousal-btn">
-							<img src="./images/Component 2 copy.svg" />
-						</div>
-
-						<div title="after" class="open carousal-btn">
-							<img src="./images/Component 2.svg" />
-						</div>
+			<section class="wrapperAll">
+				<section class="sliderComplete">
+					<section class="wrapper">
+						<h1 class="grey-two  pt-3 pb-4">
+							Choose between our bestSellers
+						</h1>
 					</section>
+					<section class="wrapper">
+						<ul class="slider">
+							{{#each bestSellers}}
+								<li>
+									{{{course}}}
+								</li>
+							{{/each}}
+						</ul>
+					</section>
+
+					<div title="before" class="close carousal-btn">
+						<img src="./images/Component 2 copy.svg" />
+					</div>
+
+					<div title="after" class="open carousal-btn">
+						<img src="./images/Component 2.svg" />
+					</div>
 				</section>
-			</div>
+			</section>
 		</script>
 		<script id="nav-template" type="text/x-handlebars-template">
 			<div class="logo white">
