@@ -172,6 +172,96 @@ select {
 .bg-dark {
   background-color: #08090a;
 }
+<<<<<<< Updated upstream
+=======
+.bg-light {
+  background-color: aliceBlue;
+}
+.bg-variant {
+  background-color: #abfcef;
+}
+.bg-primary-dark {
+  background-color: #7bd0c2;
+}
+.bg-tertiary {
+  background-color: #00ffcb;
+}
+.floating-right {
+  position: absolute;
+  right: 0;
+  margin-top: -60px;
+}
+.border-card {
+  border: 2px solid #0ec9a4;
+  border-radius: 0px;
+  position: absolute;
+  width: 85%;
+  height: 75%;
+  top: 42px;
+  right: 6px;
+  z-index: 1;
+}
+.border-card-2 {
+  border: 2px solid #7bd0c2;
+  border-radius: 0px;
+  position: absolute;
+  width: 85%;
+  height: 75%;
+  top: 90px;
+  right: 6px;
+  z-index: 1;
+}
+.absolute-zi {
+  position: relative;
+  z-index: 20;
+}
+.right {
+  text-align: right;
+}
+.float-r {
+  float: right;
+}
+.img-tri {
+  position: absolute;
+  margin-top: -60px;
+  z-index: -1;
+  left: 0;
+}
+@media only screen and (max-width: 767px) {
+  .floating-right {
+    width: 40px;
+    height: auto;
+    margin-top: -20px;
+  }
+  .img-tri {
+    width: 90px;
+    height: auto;
+    margin-top: -45px;
+  }
+  .border-card {
+    display: none;
+  }
+  .border-card-2 {
+    display: none;
+  }
+}
+.apply-btn {
+  padding-left: 300px;
+}
+.cv-btn {
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+}
+@media only screen and (max-width: 767px) {
+  .apply-btn {
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+  .btn-apply {
+    width: 10px;
+  }
+}
+>>>>>>> Stashed changes
 button {
   cursor: pointer;
   border: none !important;
