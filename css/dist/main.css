@@ -3,6 +3,16 @@
   display: block;
   margin: 0 auto;
 }
+.zindex-two {
+  z-index: 2;
+}
+.zindex-one {
+  z-index: 1;
+}
+.zindex-three {
+  z-index: 100;
+  position: relative;
+}
 @font-face {
   font-family: "courgette-regular";
   src: url("../fonts/courgette-regular-webfont.woff2") format("woff2"), url("../fonts/courgette-regular-webfont.woff") format("woff");
@@ -66,7 +76,7 @@ h4 {
 }
 h5 {
   font-family: "opensans-semibold";
-  font-size: 23px;
+  font-size: 21px;
   letter-spacing: 0.1px;
   line-height: 26px;
   margin: 14px 0;
@@ -211,6 +221,9 @@ select {
 .bg-tertiary {
   background-color: #00ffcb;
 }
+.bg-black {
+  background-color: #434445;
+}
 .floating-right {
   position: absolute;
   right: 0;
@@ -250,6 +263,7 @@ select {
   position: absolute;
   margin-top: -60px;
   z-index: -1;
+  left: 0;
 }
 @media only screen and (max-width: 767px) {
   .floating-right {
@@ -307,9 +321,7 @@ a {
   overflow: hidden !important;
 }
 .wrapper {
-  width: 90%;
-  max-width: 960px;
-  margin: 2em auto;
+  margin: 2em 0 2em 0;
 }
 .wrapper:after {
   content: " ";
@@ -329,7 +341,6 @@ a {
   display: inline-block;
   width: 200px;
   margin: 0 1%;
-  padding-bottom: 2em;
 }
 .slider li:first-child {
   margin-left: 0;
@@ -365,7 +376,7 @@ a {
 }
 .sliderComplete div {
   position: absolute;
-  top: 0;
+  top: 120px;
   bottom: 0;
   padding: 1em 2em;
   border: none;
@@ -381,8 +392,13 @@ a {
   opacity: 0;
 }
 .turn {
-  margin-left: -115% !important;
+  margin-left: -90% !important;
   transition: all 0.5s;
+}
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    margin: 1em 2em;
+  }
 }
 @media screen and (max-width: 600px) {
   .sliderComplete .wrapper {
@@ -392,11 +408,20 @@ a {
   .slider li .cover {
     width: 100%;
   }
+  .slider li {
+    width: 180px;
+  }
+  .wrapper {
+    margin: 1em;
+  }
 }
 @media screen and (orientation: portrait) {
   .sliderComplete .wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
+  }
+  .slider li {
+    width: 180px;
   }
   .slider li .cover {
     width: 100%;
@@ -406,6 +431,22 @@ a {
   .sliderComplete div.open {
     display: none;
     opacity: 0;
+  }
+}
+.bg-triangle {
+  position: absolute;
+  bottom: 373px;
+}
+@media screen and (max-width: 767px) {
+  .bg-triangle {
+    position: absolute;
+    bottom: 410px;
+  }
+}
+@media screen and (max-width: 524px) {
+  .bg-triangle {
+    position: absolute;
+    bottom: 384px;
   }
 }
 nav {
@@ -427,7 +468,7 @@ nav {
   position: absolute;
   top: 54px;
   width: 140px;
-  z-index: 3;
+  z-index: 9;
 }
 .mobile {
   display: none;
@@ -469,7 +510,7 @@ nav {
   transform: rotate(-45deg);
 }
 .menu {
-  z-index: 2;
+  z-index: 7;
   top: 59px;
   left: 0;
   font-weight: bold;

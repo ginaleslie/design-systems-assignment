@@ -10,9 +10,7 @@ a {
 }
 
 .wrapper {
-	width: 90%;
-	max-width: 960px;
-	margin: 2em auto;
+	margin: 2em 0 2em 0;
 }
 
 .wrapper:after {
@@ -38,7 +36,6 @@ a {
 	display: inline-block;
 	width: 200px;
 	margin: 0 1%;
-	padding-bottom: 2em;
 }
 
 .slider li:first-child {
@@ -84,7 +81,7 @@ a {
 
 .sliderComplete div {
 	position: absolute;
-	top: 0;
+	top: 120px;
 	bottom: 0;
 	padding: 1em 2em;
 	border: none;
@@ -105,10 +102,15 @@ a {
 }
 
 .turn {
-	margin-left: -115% !important;
+	margin-left: -90% !important;
 	transition: all 0.5s;
 }
 
+@media screen and (max-width: 1200px) {
+	.wrapper {
+		margin: 1em 2em;
+	}
+}
 @media screen and (max-width: 600px) {
 	.sliderComplete .wrapper {
 		overflow-x: scroll;
@@ -118,12 +120,21 @@ a {
 	.slider li .cover {
 		width: 100%;
 	}
+	.slider li {
+		width: 180px;
+	}
+	.wrapper {
+		margin: 1em;
+	}
 }
 
 @media screen and (orientation: portrait) {
 	.sliderComplete .wrapper {
 		overflow-x: scroll;
 		overflow-y: hidden;
+	}
+	.slider li {
+		width: 180px;
 	}
 
 	.slider li .cover {
