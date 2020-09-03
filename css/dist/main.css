@@ -513,7 +513,7 @@ a {
   margin-left: -90% !important;
   transition: all 0.5s;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .wrapper {
     margin: 1em 2em;
   }
