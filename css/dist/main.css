@@ -762,7 +762,7 @@ footer ul {
     height: 10px;
   }
 }
-form input {
+.home-form input {
   border: 1px solid #c6c6c6;
   height: 35px;
 }

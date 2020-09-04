@@ -15,7 +15,9 @@ module.exports = function (grunt) {
 					mangle: true,
 				},
 				files: {
-					"./build/main.min.js": "./main.js",
+					"./build/main.min.js": "./js/main.js",
+					"./build/carousal.min.js": "./js/carousal.js",
+					"./build/navigation.min.js": "./js/navigation.js",
 				},
 			},
 		},

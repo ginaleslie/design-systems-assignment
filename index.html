@@ -117,32 +117,34 @@
 		<section id="carousalData"></section>
 		<footer id="footerData"></footer>
 		<script id="carousal-template" type="text/x-handlebars-template">
-			<section class="wrapperAll">
-				<section class="sliderComplete">
-					<section class="wrapper">
-						<h1 class="grey-two  pt-3 pb-4">
-							Choose between our bestSellers
-						</h1>
-					</section>
-					<section class="wrapper">
-						<ul class="slider">
-							{{#each bestSellers}}
-								<li>
-									{{{course}}}
-								</li>
-							{{/each}}
-						</ul>
-					</section>
+			<div class="max-width  pt-md-0 pt-0 pr-2 pl-2 grey-two pb-4">
+				<section class="wrapperAll">
+					<section class="sliderComplete">
+						<section class="wrapper">
+							<h1 class="grey-two  pt-3 pb-4">
+								Choose between our best sellers
+							</h1>
+						</section>
+						<section class="wrapper">
+							<ul class="slider">
+								{{#each bestSellers}}
+									<li>
+										{{{course}}}
+									</li>
+								{{/each}}
+							</ul>
+						</section>
 
-					<div title="before" class="close carousal-btn">
-						<img src="./images/Component 2 copy.svg" />
-					</div>
+						<div title="before" class="close carousal-btn">
+							<img src="./images/Component 2 copy.svg" />
+						</div>
 
-					<div title="after" class="open carousal-btn">
-						<img src="./images/Component 2.svg" />
-					</div>
+						<div title="after" class="open carousal-btn">
+							<img src="./images/Component 2.svg" />
+						</div>
+					</section>
 				</section>
-			</section>
+			</div>
 		</script>
 		<script id="nav-template" type="text/x-handlebars-template">
 			<div class="logo white">
